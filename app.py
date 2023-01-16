@@ -5,6 +5,7 @@ import numpy as np
 import pickle
 import sklearn
 
+
 DATASET_PATH = "data/heart_2020_cleaned.csv"
 LOG_MODEL_PATH = "model/logistic_regression.pkl"
 
@@ -78,7 +79,7 @@ def main():
         page_icon="images/heart-fav.png"
     )
 
-    st.title("Heart Disease Prediction")
+    st.title("Data Science Application in Predicting Heart Disease")
     st.subheader("Are you wondering about the condition of your heart? "
                  "This app will help you to diagnose it!")
 
@@ -107,17 +108,13 @@ def main():
         **Keep in mind that this results is not equivalent to a medical diagnosis!
         This model would never be adopted by health care facilities because of its less
         than perfect accuracy, so if you have any problems, consult a human doctor.**
-        
-        **Author: Kamil Pytlak ([GitHub](https://github.com/kamilpytlak/heart-condition-checker))**
-        
-        You can see the steps of building the model, evaluating it, and cleaning the data itself
-        on my GitHub repo [here](https://github.com/kamilpytlak/data-analyses/tree/main/heart-disease-prediction). 
         """)
 
     heart = load_dataset()
 
     st.sidebar.title("Feature Selection")
     st.sidebar.image("images/heart-sidebar.png", width=100)
+    st.image("images/Age_Category.png")
 
     input_df = user_input_features()
     df = pd.concat([input_df, heart], axis=0)
