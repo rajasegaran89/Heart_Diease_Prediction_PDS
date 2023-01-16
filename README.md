@@ -1,4 +1,4 @@
-# Heart Condition Checker
+# Data Science Application in Predicting Heart Disease
 The app created with Python to predict person's heart health condition based on well-trained machine learning model (logistic regression).
 
 <img width="833" alt="image" src="https://user-images.githubusercontent.com/122791576/212724523-7cae1f9f-b3f9-4903-a9d7-f845e5aec5c5.png">
