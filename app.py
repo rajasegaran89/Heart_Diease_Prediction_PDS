@@ -115,6 +115,7 @@ def main():
     st.sidebar.title("Feature Selection")
     st.sidebar.image("images/heart-sidebar.png", width=100)
     st.image("images/Age_Category.png")
+    st.image("images/Pearson.jpg")
 
     input_df = user_input_features()
     df = pd.concat([input_df, heart], axis=0)
