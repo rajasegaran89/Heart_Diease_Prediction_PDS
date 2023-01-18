@@ -86,10 +86,16 @@ def main():
     col1, col2 = st.columns([1, 3])
 
     with col1:
-        st.image("images/doctor.png",
+        st.image("images/doctor_new.png",
                  caption="I'll help you diagnose your heart health! - Dr. Logistic Regression",
                  width=150)
-        submit = st.button("Predict")
+        submit = st.button("Predict")button {
+            color: #4F8BF9;
+            border-radius: 20%;
+            backgroud-color: #00ff00;
+            height: 3em;
+            width: 3em;
+            }
     with col2:
         st.markdown("""
         Is your heart healthy? Did you know that heart attacks are the leading cause of death globally? 
@@ -101,7 +107,7 @@ def main():
             2.    Press the "Predict" button and wait seconds to get the result. 
         Please remember that this result does not constitute a diagnosis from a doctor!   
         Due to this model's imperfect accuracy, healthcare facilities would never employ it. 
-        Therefore, if you experience any concerns or problems, see a doctor.**
+        Therefore, if you experience any concerns or problems, see a doctor.
         """)
 
     heart = load_dataset()
@@ -135,13 +141,13 @@ def main():
             st.markdown(f"**The probability that you'll have"
                         f" heart disease is {round(prediction_prob[0][1] * 100, 2)}%."
                         f" You are healthy!**")
-            st.image("images/heart-okay.jpg",
+            st.image("images/heart-okay_new.jpg",
                      caption="Your heart seems to be okay! - Dr. Logistic Regression")
         else:
             st.markdown(f"**The probability that you will have"
                         f" heart disease is {round(prediction_prob[0][1] * 100, 2)}%."
                         f" It sounds like you are not healthy.**")
-            st.image("images/heart-bad.jpg",
+            st.image("images/heart-bad_new.jpg",
                      caption="I'm not satisfied with the condition of your heart! - Dr. Logistic Regression")
 
 
