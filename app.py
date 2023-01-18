@@ -89,6 +89,7 @@ def main():
         st.image("images/doctor_new.png",
                  caption="I'll help you diagnose your heart health! - Dr. Logistic Regression",
                  width=150)
+        st.markdown('##')
         m = st.markdown("""
             <style>
             div.stButton > button:first-child {
@@ -109,9 +110,7 @@ def main():
         Please remember that this result does not constitute a diagnosis from a doctor!   
         Due to this model's imperfect accuracy, healthcare facilities would never employ it. 
         Therefore, if you experience any concerns or problems, see a doctor.
-        
-        
-        """)
+            """)
 
     heart = load_dataset()
 
