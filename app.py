@@ -79,10 +79,10 @@ def main():
         page_icon="images/heart-fav.png"
     )
     st.info("22054606 Basubeit, Omar Gumaan Saleh")
-    st.text("22050516 Chandra Mohan a/l Rajendran")
-    st.text("22052733 Rajasegaran a/l M Sivaanandan")
-    st.text("22051081 Tan Kai Ying")
-    st.text("S2190151 Wee Hin Sheik")
+    st.info("22050516 Chandra Mohan a/l Rajendran")
+    st.info("22052733 Rajasegaran a/l M Sivaanandan")
+    st.info("22051081 Tan Kai Ying")
+    st.info("S2190151 Wee Hin Sheik")
     st.title("Data Science Application in Predicting Heart Disease")
     st.subheader("Are you wondering about the condition of your heart? "
                  "This app will help you to diagnose it!")
