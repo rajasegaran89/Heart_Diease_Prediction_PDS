@@ -142,14 +142,18 @@ def main():
             st.markdown(f"**The probability that you'll have"
                         f" heart disease is {round(prediction_prob[0][1] * 100, 2)}%."
                         f" You are healthy!**")
-            st.image("images/heart-okay_new.jpg", "images/Age_Category.png"
+            st.image("images/heart-okay_new.jpg",
                      caption="Your heart seems to be okay! - Dr. Logistic Regression")
+            st.image("images/Age_Category.png")
+            st.image("images/Pearson.jpg")
         else:
             st.markdown(f"**The probability that you will have"
                         f" heart disease is {round(prediction_prob[0][1] * 100, 2)}%."
                         f" It sounds like you are not healthy.**")
             st.image("images/heart-bad_new.jpg",
                      caption="I'm not satisfied with the condition of your heart! - Dr. Logistic Regression")
+            st.image("images/Age_Category.png")
+            st.image("images/Pearson.jpg")
 
 
 if __name__ == "__main__":
