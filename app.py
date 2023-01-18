@@ -78,8 +78,7 @@ def main():
         page_title="Heart Disease Prediction App",
         page_icon="images/heart-fav.png"
     )
-    st.info("
-22054606 Basubeit, Omar Gumaan Saleh")
+    st.text("22054606 Basubeit, Omar Gumaan Saleh")
     st.title("Data Science Application in Predicting Heart Disease")
     st.subheader("Are you wondering about the condition of your heart? "
                  "This app will help you to diagnose it!")
