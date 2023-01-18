@@ -78,7 +78,7 @@ def main():
         page_title="Heart Disease Prediction App",
         page_icon="images/heart-fav.png"
     )
-    st.text("22054606 Basubeit, Omar Gumaan Saleh")
+    st.info("22054606 Basubeit, Omar Gumaan Saleh")
     st.text("22050516 Chandra Mohan a/l Rajendran")
     st.text("22052733 Rajasegaran a/l M Sivaanandan")
     st.text("22051081 Tan Kai Ying")
