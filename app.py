@@ -115,7 +115,7 @@ def main():
     heart = load_dataset()
 
     st.sidebar.title("Feature Selection")
-    st.sidebar.image("images/heart-sidebar.png", width=100)
+    st.sidebar.image("images/heart-sidebar_new.png", width=100)
 
 
     input_df = user_input_features()
