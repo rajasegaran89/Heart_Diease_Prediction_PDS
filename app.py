@@ -89,13 +89,13 @@ def main():
         st.image("images/doctor_new.png",
                  caption="I'll help you diagnose your heart health! - Dr. Logistic Regression",
                  width=150)
-        submit = st.button("Predict")button {
-            color: #4F8BF9;
-            border-radius: 20%;
-            backgroud-color: #00ff00;
-            height: 3em;
-            width: 3em;
+        m = st.markdown("""
+            <style>
+            div.stButton > button:first-child {
+            background-color: rgb(204, 49, 49);
             }
+            </style>""", unsafe_allow_html=True)
+        submit = st.button("Predict")
     with col2:
         st.markdown("""
         Is your heart healthy? Did you know that heart attacks are the leading cause of death globally? 
