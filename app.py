@@ -93,7 +93,7 @@ def main():
             <style>
             div.stButton > button:first-child {
             background-color: #00cc00;color:white;
-            font-size:10px;height:4em;width:20em;
+            font-size:20px;height:4em;width:20em;
             }
             </style>""", unsafe_allow_html=True)
         submit = st.button("Predict")
