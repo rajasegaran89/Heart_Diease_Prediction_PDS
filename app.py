@@ -92,8 +92,8 @@ def main():
         m = st.markdown("""
             <style>
             div.stButton > button:first-child {
-            background-color: rgb(204, 49, 49);
-            font-size:20px;height:3em;width:30em;
+            background-color: #00cc00;color:white;
+            font-size:10px;height:2em;width:10em;
             }
             </style>""", unsafe_allow_html=True)
         submit = st.button("Predict")
