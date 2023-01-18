@@ -109,6 +109,8 @@ def main():
         Please remember that this result does not constitute a diagnosis from a doctor!   
         Due to this model's imperfect accuracy, healthcare facilities would never employ it. 
         Therefore, if you experience any concerns or problems, see a doctor.
+        
+        
         """)
 
     heart = load_dataset()
