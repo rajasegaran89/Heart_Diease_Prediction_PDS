@@ -92,22 +92,16 @@ def main():
         submit = st.button("Predict")
     with col2:
         st.markdown("""
-        Did you know that machine learning models can help you
-        predict heart disease pretty accurately? In this app, you can
-        estimate your chance of heart disease (yes/no) in seconds!
-        
-        Here, a logistic regression model using an undersampling technique
-        was constructed using survey data of over 300k US residents from the year 2020.
-        This application is based on it because it has proven to be better than the random forest
-        (it achieves an accuracy of about 80%, which is quite good).
-        
-        To predict your heart disease status, simply follow the steps bellow:
-        1. Enter the parameters that best describe you;
-        2. Press the "Predict" button and wait for the result.
-            
-        **Keep in mind that this results is not equivalent to a medical diagnosis!
-        This model would never be adopted by health care facilities because of its less
-        than perfect accuracy, so if you have any problems, consult a human doctor.**
+        Is your heart healthy? Did you know that heart attacks are the leading cause of death globally? 
+        An estimated 17.9 million people died from CVDs in 2019.Therefore, we highly encourage you to have a heart disease test. 
+        This app calculates the probability of an individual based on the parameter given to predict heart disease within seconds. 
+        We are calculating the probability based on the survey data of over 300 thousand United States residents from 2020. 
+        It will provide 80% accuracy of the result. Here are a few steps away to predicting your heart disease status:
+            1.    Enter the parameters based on your health status.
+            2.    Press the "Predict" button and wait seconds to get the result. 
+        Please remember that this result does not constitute a diagnosis from a doctor!   
+        Due to this model's imperfect accuracy, healthcare facilities would never employ it. 
+        Therefore, if you experience any concerns or problems, see a doctor.**
         """)
 
     heart = load_dataset()
