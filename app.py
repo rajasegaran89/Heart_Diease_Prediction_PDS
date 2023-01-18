@@ -116,8 +116,7 @@ def main():
 
     st.sidebar.title("Feature Selection")
     st.sidebar.image("images/heart-sidebar.png", width=100)
-    st.image("images/Age_Category.png")
-    st.image("images/Pearson.jpg")
+
 
     input_df = user_input_features()
     df = pd.concat([input_df, heart], axis=0)
@@ -143,7 +142,7 @@ def main():
             st.markdown(f"**The probability that you'll have"
                         f" heart disease is {round(prediction_prob[0][1] * 100, 2)}%."
                         f" You are healthy!**")
-            st.image("images/heart-okay_new.jpg",
+            st.image("images/heart-okay_new.jpg", "images/Age_Category.png"
                      caption="Your heart seems to be okay! - Dr. Logistic Regression")
         else:
             st.markdown(f"**The probability that you will have"
